@@ -21,7 +21,9 @@
 // console.log(Avg);
 // console.log(avg);
 
-// How would we find the average of 5 of ten numbers without declaring ten variables?
+// How would we find the average of 5 of ten numbers without declaring ten variables? 
+
+//USE A LOOP!!!
 
 let Array = [1, 12, 18, 4, 9, 6, 19, 9, 6, 30]; //Put the values in an array.
 
@@ -29,6 +31,7 @@ let sum = 0; //create a variable that will hold all the information the loop has
 //^^^(THIS IS IMPORTANT!)
 
 for(let i = 0; i < 5; i++){ //create a loop the iterates through the array up to the fifth number.
+
    sum += Array[i];// instruct the variable to add the data with each iteration. 
   console.log(sum);
 }
@@ -36,3 +39,19 @@ for(let i = 0; i < 5; i++){ //create a loop the iterates through the array up to
 let average = sum / 5;
 console.log("average: ")
 console.log(average);
+
+
+
+let numbers = [4, 10, 22, -30, 55]; 
+
+let add = 0;
+
+for(let i = 0; i < 5; i++){
+	add += numbers[i];
+}
+
+let 
+
+console.log()
+
+let integers = [68, 7, -22, 9, 100];
