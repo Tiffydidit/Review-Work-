@@ -21,9 +21,9 @@ let avg = (six + seven + eight + nine + ten)/5;
 console.log(Avg);
 console.log(avg);
 
-How would we find the average of 5 of ten numbers without declaring ten variables? 
+// How would we find the average of 5 of ten numbers without declaring ten variables? 
 
-USE A LOOP!!!
+// USE A LOOP!!!
 
 let Array = [1, 12, 18, 4, 9, 6, 19, 9, 6, 30]; //Put the values in an array.
 
