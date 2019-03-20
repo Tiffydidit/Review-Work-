@@ -24,11 +24,18 @@ for(let i = 10; i > 0; i--){
 
 }
 
+
+/********************************1.3 pgs 25-29, unit HW of 1.3******************************************/
+
+
+
+
+
 //  1.3 pgs 25-29, unit HW of 1.3
 
 //output: 1) 1, 3, 5, 7, 9 
 
-/* We create a for loop that starts at 1 and give it an exit condition of ten, as we want to
+/* We create a for loop that starts at 1 and give it an exit condition of < ten, as we want to
 capture all numbers btwn 1-9. We use a conditonal statement to instruct the loop to display each 
 odd value of i, and a space (this is for appearance), then iterate.  Finally at the end of the 
 for loop we log another space to seperate output 1 and 2.*/ 
@@ -64,7 +71,7 @@ let n = 6;
 while (n <= 60){
 	console.log(n);
 	n = n + 3;
-} 
+}console.log(''); 
 
 /* Write a for loop that outputs the following output: 
 #
@@ -85,7 +92,7 @@ word by one "#" before "i" ever iterates.
 When the loop starts "word" equals "##", because we instruct the loop to add a "#" to "word" when "i" < 7 and 1, 
 is infact, less than 7.
 
-When "i" is two, "word" is "###" and it goes on until we hit 6, wherein "word" equals "#######" => 7 hashes */
+When "i" is two, "word" is "###" and it goes on until we hit 6, wherein "word" equals "#######" or 7 hashes */
 
 let h = 1;
 let k = '';
@@ -94,8 +101,7 @@ while (h <= 8 ){
 	k = k + '#';
 	console.log(k);
 	h++;
-
-}
+} console.log(''); 
 
 
 
@@ -106,18 +112,54 @@ while (h <= 8 ){
 However, I found it confusing, so I set my variable w/ a numerical value, "h", to 1; 
 then, set my variable w/ a string value, "k", to an empty string.
 
-Now, before h iterates / while "h" is 1 - "k" is equal to one hash or '#'. 
+Now, before "h" iterates or while "h" is 1 - "k" is equal to one hash or '#'. 
 
-I used a while loop which essentially tells my loop to iterate "h", while "h" being less than or equal to 8 is true.
+I used a while loop, which essentially tells my loop to iterate "h", while "h" being less than or equal to 8, is true.
 
-So as "h" iterates from 1 - 8: 1 = "#", 2 = "##", until finally 8 = "########". 
+So as "h" iterates by 1, from 1 - 8, so does "k": 
+
+h = 1: add '#' to "k" display "k": '#', increase h by 1; 
+
+h= 2: add '#' to "k" display "k": '##', increase h by 1;
+
+ until finally h = 8: add '#' to "k"  display "k": '########', break loop. 
 */
 
 
 
+//Using the remainder % operator, write a for loop that iterates between 0 and 10 and prints all even numbers.
 
+for(let i = 0; i <= 10; i++){
+	if(i % 2 === 0){
+		console.log(i);
+	}
+}console.log('');
 
+//Write a for loop that iterates from 1- 20. Prints “prime” for all prime numbers, 
+//“even” for all even numbers, and “odd” for all odd numbers.[Treat 2 as an even number and 1 & 3 as odd]
 
+for(let i = 1; i <= 20; i++){ //create a for loop that runs for as long as i is less than or equal to 20.
+	if ((i % 3 === 0) || (i === 1)){// set a condition inside the loop that displays "odd" for all iterations of "i" that are--  
+		console.log('odd');//--divisble by 3 or are the number 1 (1 is not being treated as prime).
+	} else if (i % 2 === 0){ // set another condition that displays "even" for all iterations of "i" that are divisible by 2.
+		console.log('even');
+	} else {
+		console.log('prime');//in all other cases display "prime".
+	}
+}console.log('');
+
+//Write a for loop that iterates from 1- 20. Prints “prime” for all prime numbers, 
+//“even” for all even numbers, and “odd” for all odd numbers.
+
+for(let i = 1; i <= 20; i++){//create a for loop that runs for as long as i is less than or equal to 20.
+	if ((i % 2 === 0) && (i !== 2)){//set a condition that displays "even" for all iterations of "i"--
+		console.log('even');//--that are divisible by 2 and not 2. 
+	} else if ((i % 3 === 0) && (i !== 3)){//set a condition that displays "odd" for for all iterations of "i"-- 
+		console.log('odd');//--that are divisible by 3 and not 3. 
+	} else {
+		console.log('prime');//in all other cases display "prime".
+	}
+}console.log('');
 
 
 
