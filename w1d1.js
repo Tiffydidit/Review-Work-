@@ -37,8 +37,27 @@ for(let i = 0; i < 5; i++){ //create a loop the iterates through the array up to
 }
 
 let average = sum / 5;
-console.log("average: ")
+console.log("average: ");
 console.log(average);
+
+console.log("");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //AVERAGE HOMEWORK:
 
@@ -51,19 +70,22 @@ for(let i = 0; i < 5; i++){
 }
 
 let divide = add / 5;
-
+console.log("HW Average 1: ");
 console.log(divide);
 
-let equal = 0;
+
+
+
 
 let integers = [68, 7, -22, 9, 100];
+let equal = 0;
 
 for (let i = 0; i < integers.length; i++){
 	equal += integers[i];
 }
 
-let Average = equal / 5;
-
+let Average = equal / integers.length;
+console.log("HW Average 2: ");
 console.log(Average);
 
 
