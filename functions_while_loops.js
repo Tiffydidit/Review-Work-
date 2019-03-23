@@ -189,14 +189,47 @@ function myMoneyBack(paid, price){
 	}
 }
 
-myMoneyBack(200, 136.14);
+myMoneyBack(200, 136.15);
+console.log(' ');
 
 // It appears that when the coins in price are an even number and myChange is set to > .01 - the pennies are correct BUT
 //When the coins in price are odd, the pennies are off by one, unlessmyChange is set to > 0. Hinky...
 
 
+ // Write a program that uses console.log to print all the numbers from 1 to 100 with two exceptions. 
+ // For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. 
+ // When you have that working, modify your program to print "FizzBuzz", 
+ // for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 
 
+let z = 1;
+while (z <= 100){
+	if ((z % 5 === 0) && (z % 3 !== 0)) {
+		console.log(z + " Fizz");
+	} else if ((z % 3 === 0) && (z % 5 !== 0)){
+		console.log(z + " Buzz");
+	} else {
+		console.log(z);
+	}
+	z++;
+} console.log(' ');
+
+
+
+let f = 1;
+
+while (f <= 100){
+	if(f % 15 === 0){
+		console.log( f + " FizzBuzz");
+	} else if (f % 5 === 0 ){
+		console.log(f + " Fizz");
+	} else if (f % 3 === 0){
+		console.log(f + " Buzz");
+	} else {
+		console.log(f);
+	}
+	f++;
+}
 
 
 
