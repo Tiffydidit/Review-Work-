@@ -11,7 +11,7 @@ let i = 9;
 while (i >= 0){
 	console.log(i)
 	i--;
-}
+}console.log(' '); // this is just a space. 
 
 // // Keep printing integers multiples of 3 as long as integers are less than 35
 
@@ -22,7 +22,7 @@ while (k < 35){
 	} 
 	k++;
 	
-}
+}console.log(' ');
 
 // //Keep printing integers multiples of 5 as long as integers are less than 100
 
@@ -32,7 +32,7 @@ while(q < 100){
 		console.log(q);
 	}
 	q++;
-}
+}console.log(' ');
 
 // //Using a while loop printintegersbetween 0 and 20. 
 // //All numbers divisible by 2 should be multiplied by 3 before they are output. 
@@ -45,7 +45,7 @@ while(j < 20){
 	}
 	j++;
 
-}
+}console.log(' ');
 
 //Using a while loop, print out all prime numbers between 0 - 20.
 
@@ -56,7 +56,7 @@ while (p < 20){
 		console.log(p)
 	}
 	p++;
-}
+}console.log(' ');
 
 
 // Nando went to the vending machine to buy himself a cookie. The cookie costs $4 dollars. 
@@ -75,6 +75,149 @@ function moneyBack(bill, cost){//That way we can reuse this code w/ any numbers 
 console.log(c + " Quarters"); //display the final value of c (the counter) concatenated with the a string that reads: Quarters. 
 }
 moneyBack(10, 4);//Here we are calling our function and passing it the arguments specified in the word problem. 
+console.log(' ');
+
+// Nando went to Uniqlo and bought himself a nice plaid shirt for $27.83. 
+// He paid with $100 as he had no change. 
+// The cashier paid in large denominations since they needed change for the other customers.
+
+// Write a loop that prints out how many bills he received in return in as large denominations as possible. 
+
+
+function myMoneyBack(paid, price){
+	let myChange = paid - price;
+	let counter = 0;
+
+	while (myChange >= 100){
+		myChange -= 100;
+		counter++;
+	} if (counter === 1){
+		console.log(counter + ": hundred");
+	} else {
+		console.log(counter + ": hundreds");
+	}
+	counter = 0;
+
+	while (myChange >= 50){//Each while loop is it's own universe, they change the values of the globally declared variables, 
+		myChange -= 50;//but do no intefer with each other. 
+		counter++;//With each bill dispensed we subtract it from myChange and count it w/ our counter. 
+	} if (counter === 1){//Outside of the loop we display the final value of counter. 
+		console.log(counter + ": fifty");//we use if else statements to ensure grammatically correct declarations of change. 
+	} else { 
+		console.log(counter + ": fifties")
+	} 
+	counter = 0;//We reset the counter to zero, so we can reuse it for subsequent denominations and repeat.
+	//Else we'd need a different counter for every denomination of bills and the coins.  
+
+	while (myChange >= 20){
+		myChange -= 20;
+		counter++;	
+	} if (counter === 1){
+	 	console.log(counter + ": twenty");
+	} else {
+		console.log(counter + ": twenties");
+	}
+	counter = 0;
+
+	while (myChange >= 10){
+		myChange -= 10;
+		counter++;
+	} if (counter === 1){
+		console.log(counter + ": ten");
+	} else { 
+		console.log(counter + ": tens");
+	}
+	counter = 0;
+
+	while (myChange >= 5){
+		myChange -= 5;
+		counter++;
+	} if ((counter > 1)|| (counter === 0)){
+		console.log(counter + ": fives");
+	} else { 
+		console.log(counter + ": five");
+	}
+	counter = 0;
+
+	while (myChange >= 1){
+		myChange -= 1;
+		counter++;
+	} if ((counter > 1)|| (counter === 0)){
+		console.log(counter +": dollars");
+	} else {
+		console.log(counter +": dollar");
+	}
+	counter = 0; 
+
+	while (myChange >= .25){
+		myChange -= .25;
+		counter++
+	} if ((counter > 1)|| (counter === 0)){
+		console.log(counter + ": quarters");
+	} else { 
+		console.log(counter + ": quarter");
+	}
+	counter = 0;
+
+	while (myChange >= .10){
+		myChange -= .10;
+		counter++;
+	} if ((counter > 1)|| (counter === 0)){
+		console.log(counter + ": dimes");
+	} else {
+		console.log(counter + ": dime");
+	}
+	counter = 0;
+
+	while (myChange >= .05){
+		myChange -= .05;
+		counter++;
+	} if ((counter > 1) || (counter === 0)){
+		console.log(counter + ": nickels");
+	} else {
+		console.log(counter + ": nickel");
+	}
+	counter = 0;
+
+	while (myChange > .01){
+		myChange -= .01;
+		counter++
+	} if ((counter > 1) || (counter === 0)){
+		console.log(counter + ": pennies");
+	} else {
+		console.log(counter + ": penny");
+	}
+}
+
+myMoneyBack(200, 136.14);
+
+// It appears that when the coins in price are an even number and myChange is set to > .01 - the pennies are correct BUT
+//When the coins in price are odd, the pennies are off by one, unlessmyChange is set to > 0. Hinky...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
