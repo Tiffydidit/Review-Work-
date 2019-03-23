@@ -81,12 +81,19 @@ console.log(' ');
 // ❑Write a function that adds three number and divide the result by 3 in ES5
 // Now Try converting the code to arrow functions.
 
-function addNum(a,b,c){
+function addNum(a, b, c){
 	var addition = a + b + c;
 	console.log(addition);
 	console.log(' ');
 }
-addNum(6,2,4);
+addNum(6, 2, 4);
+
+function divNum(a, b, c){
+	var divide = (a + b + c) / 3;
+	console.log(divide);
+	console.log(' ');
+}
+divNum(.33, 21, 66);
 
 
 
