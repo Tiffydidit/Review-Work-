@@ -97,6 +97,12 @@ divNum(.33, 21, 66);
 
 let addNumber = (a, b, c) => a + b + c;
 console.log(addNumber(7, 14, 55));
+console.log(' ');
+
+let divNumber = (a, b, c) => (a + b + c) / 3;
+console.log(divNumber(3, 6, 15));
+console.log(' ');
+
 
 
 
