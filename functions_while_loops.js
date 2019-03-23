@@ -77,11 +77,43 @@ console.log(c + " Quarters"); //display the final value of c (the counter) conca
 moneyBack(10, 4);//Here we are calling our function and passing it the arguments specified in the word problem. 
 console.log(' ');
 
+// ❑Write a function that adds three numbers in ES5
+// ❑Write a function that adds three number and divide the result by 3 in ES5
+// Now Try converting the code to arrow functions.
+
+function addNum(a,b,c){
+	var addition = a + b + c;
+	console.log(addition);
+	console.log(' ');
+}
+addNum(6,2,4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Nando went to Uniqlo and bought himself a nice plaid shirt for $27.83. 
 // He paid with $100 as he had no change. 
 // The cashier paid in large denominations since they needed change for the other customers.
 
 // Write a loop that prints out how many bills he received in return in as large denominations as possible. 
+
 
 
 function myMoneyBack(paid, price){
