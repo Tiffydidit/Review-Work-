@@ -104,26 +104,6 @@ console.log(divNumber(3, 6, 15));
 console.log(' ');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Nando went to Uniqlo and bought himself a nice plaid shirt for $27.83. 
 // He paid with $100 as he had no change. 
 // The cashier paid in large denominations since they needed change for the other customers.
