@@ -42,13 +42,22 @@ while(i < 8){//create a loop that runs while i being < 8 is true. We don't have 
  so we display hash with a space behind it and continue until we reach 8. 8 is the last value of i, 
  however, since it is not less that 8 the loop breaks. */
 
-/*although I got the right answer, this is more dynamic and therefore iteratable, 
-as I've hardcoded the hashes in my solution.*/ 
 
-let size = 8;// our exit condition b/c all we want, for now, is 8 rows.
+ /**********BOOK SOLUTION W/ MY UNDERSTANDING***********/
 
-let board = "";// empty string to which we will add a space or a #.
-//these nested for loops work together to add hashes and line breaks the create the board. 
+/*Although I got the right answer, this is more dynamic and therefore iteratable, 
+as I've hardcoded the hashes in my solution.
+
+I thought to do it this way, at least adding spaces and hashes to an empty string.
+I also new that "something else" would have to instruct line breaks.
+I didn't however realize that that "something else" was the result of nested loops.*/ 
+
+let size = 16;// our exit condition b/c all we want, for now, is 8 rows.
+
+let board = "";// empty string to which we will add a space or a # with each iteration of x.
+
+//these nested for loops work together to add hashes & spaces, and line breaks the create the board. 
+
 for (let y = 0; y < size; y++) {//loop that creates y axis. 
   for (let x = 0; x < size; x++) {//loop that creates the x axis
     if ((x + y) % 2 == 0) {//conditions that produce a space or a hash across the x axis of the board.
@@ -63,11 +72,11 @@ for (let y = 0; y < size; y++) {//loop that creates y axis.
 console.log(board);//here we display final product. 
 
 /* When the first loop starts, y is equal to zero.
-zero is less than 8, so we drop the first loops code block i.e. the second loop, wherein:
+zero is less than 8, so we drop into the first loops code block i.e. the second loop, wherein:
 x is equal to zero, and also less than 8, so we drop into the second loops code block i.e. our conditions. 
 when x + y is divisble by 2 "even", we add a space to board, else "odd" we add a hash, then add 1 to x.
-0 + 0 is techincally even so we add " " to board.
-our second loop finishes it's first "loop" and x = 1.
+0 + 0 is technically even so we add " " to board.
+our second for loop finishes it's first "loop around" and adds 1 to x: x = 1.
 
  1 is less than 8, 1 + 0 = 1 which is not divisble by two so we add a # to board. 
 
@@ -85,19 +94,26 @@ our second loop finishes it's first "loop" and x = 1.
 
  7 + 0 = 7 board = " # # # #" x = 8.
 
- 8 is not less and 8 so the second loop breaks and we add a line break(LAST STATMENT OF THE FIRST LOOP)
- and add 1 to y.  
+ 8 is not less than 8, so the child for loop breaks and we add a line break(LAST STATMENT OF THE PARENT FOR LOOP)
+ and add 1 to y. 
+
+ WE ARE NOT ALLOWED TO EXIT THE CHILD LOOP UNTIL x IS 8, 
+ I.E. y DOESN'T ITERATE UNTIL x REACHES 8 EVERY TIME THE PARENT LOOP RUNS.
 
 
- OUR CONDITIONALS HAVE TO INCLUDE x + y BECAUSE WE ARE NOT ALLOWED OUT OF THE SECOND LOOP UNTIL x IS 8,
- I.E. y DOESN'T ITERATE UNTIL x REACHES 8; AND EVERY TIME WE RE-ENTER THE SECOND LOOP x IS ZERO.  
-
+ OUR CONDITIONALS HAVE TO INCLUDE x + y BECAUSE EVERY TIME WE RE-ENTER THE CHILD LOOP, x IS ZERO;
  WITHOUT THE INCLUSION OF y WE'D GET THE SAME PATTERN FOR EACH ROW.
 
- After the first line break, x is zero again.
+ After the first line break, y = 1 and x is zero again.
 
-  Now the second loop runs from  0 + 1( adding a # in the first position instead of a space) to 7 + 1
+ Now the second loop runs from  0 + 1( adding a # in the first position instead of a space) to 7 + 1
  (adding a space to the last position instead of a hash).   
+
+ This repeats (alternating how each line start based on the sum of x and y) until y is 8, 
+ i.e. the parent loop is broken. 
+
+ With the nested approach the board can be as big or small as we wish, by changing the value of size. */
+
 
 
 
