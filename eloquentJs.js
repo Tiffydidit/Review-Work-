@@ -16,4 +16,9 @@ greeting = 'Good morning!';
 } else {
 greeting = 'Welcome!';
 }
-document.write( ' <h3>' + greeting + ' </h3> ');
+document.write( ' <h3>' + greeting + ' </h3> ');//we instruct the greeting to display in the document as an h3
+
+/*In the index.html we've placed the script tags where we want the message to display; however,
+we could create an empty h3 in the html, give it an id, then in the js document.getElementById('idhere').document.write(greeting);
+we could also let hThree = document.getElementById('idhere'); then, hThree.document.write(greeting); 
+allowing the script tags to be at the bottom of the html.*/
