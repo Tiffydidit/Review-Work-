@@ -259,6 +259,33 @@ while (f <= 100){
 	f++;
 }
 
+var dogs = {
+  Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"
+};
+var myDog = ["Fido", "Hunter", "Snoopie"];
+
+let i = 0;
+
+while(i < myDog.length){
+  var myBreed = dogs[myDog[i]];
+  i++
+  console.log(myBreed);
+} console.log(" ");
+
+//or
+
+for(i in dogs){
+  console.log(dogs[i]);
+}
+
+//they give the same answer. 
+
+
+
+
+
+
+
 
 
 
