@@ -261,12 +261,12 @@ while (f <= 100){
 
 //Is a for in loop using a variable to say (*for* the "variables"/keys *in* this object) {do w/e I say here}
 
-var dogs = {
-  Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"
+var dogs = {//There is an object with three properties 
+  Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"//keys work as variables, when called they give you access to their value.
 };
-var myDog = ["Fido", "Hunter", "Snoopie"];
+var myDog = ["Fido", "Hunter", "Snoopie"];//This variable is an array of keys. 
 
-let i = 0;
+let i = 0;//i is the iterator, set to zero.
 
 while(i < myDog.length){
   var myBreed = dogs[myDog[i]];
