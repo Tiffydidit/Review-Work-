@@ -3,20 +3,20 @@
 //For index.html see "js workbook" folder on destop. 
 
 
-// var today = new Date();//we assign the variable "today" to a js method that will retrieve the date. 
-// var hourNow = today.getHours();//we assign the variable "hourNow" to a js method that will retrieve the time. 
-// var greeting;//we declare the variable "greeting", globally. 
+/*var today = new Date();//we assign the variable "today" to a js method that will retrieve the date. 
+var hourNow = today.getHours();//we assign the variable "hourNow" to a js method that will retrieve the time. 
+var greeting;//we declare the variable "greeting", globally. 
 
-// if (hourNow > 18) {//we use conditionals to display a specific greeting based on the time of day
-// greeting = 'Good evening!';
-// } else if (hourNow > 12) {
-// greeting = 'Good afternoon!';
-// } else if (hourNow > 0) {
-// greeting = 'Good morning!';
-// } else {
-// greeting = 'Welcome!';
-// }
-// document.write( ' <h3>' + greeting + ' </h3> ');//we instruct the greeting to display in the document as an h3
+if (hourNow > 18) {//we use conditionals to display a specific greeting based on the time of day
+greeting = 'Good evening!';
+} else if (hourNow > 12) {
+greeting = 'Good afternoon!';
+} else if (hourNow > 0) {
+greeting = 'Good morning!';
+} else {
+greeting = 'Welcome!';
+}
+document.write( ' <h3>' + greeting + ' </h3> ');//we instruct the greeting to display in the document as an h3*/
 
 /*In the index.html we've placed the script tags where we want the message to display; however,
 we could create an empty h3 in the html, give it an id, then in the js document.getElementById('idhere').document.write(greeting);
@@ -45,12 +45,12 @@ while(i < 8){//create a loop that runs while i being < 8 is true. We don't have 
 
  /**********BOOK SOLUTION W/ MY UNDERSTANDING***********/
 
-/*Although I got the right answer, this is more dynamic and therefore iteratable, 
-as I've hardcoded the hashes in my solution.
+/*Although I got the right answer, this approach is more dynamic and therefore iteratable, 
+as I hardcoded the hashes in my solution above.
 
 I thought to do it this way, at least adding spaces and hashes to an empty string.
-I also new that "something else" would have to instruct line breaks.
-I didn't however realize that that "something else" was the result of nested loops.*/ 
+I also knew that "something else" would have to instruct line breaks.
+I didn't, however, realize that, that "something else" was the result of nested loops.*/ 
 
 let size = 16;// our exit condition b/c all we want, for now, is 8 rows.
 
@@ -106,13 +106,15 @@ our second for loop finishes it's first "loop around" and adds 1 to x: x = 1.
 
  After the first line break, y = 1 and x is zero again.
 
- Now the second loop runs from  0 + 1( adding a # in the first position instead of a space) to 7 + 1
+ Now the child loop runs from  0 + 1( adding a # in the first position instead of a space) to 7 + 1
  (adding a space to the last position instead of a hash).   
 
- This repeats (alternating how each line start based on the sum of x and y) until y is 8, 
+ This repeats (alternating how each line starts based on the sum of x and y) until y is 8, 
  i.e. the parent loop is broken. 
 
- With the nested approach the board can be as big or small as we wish, by changing the value of size. */
+ With the nested approach, the board can be as big or small as we wish, by changing the value of size. 
+ The loops, essentially, tell control to create a full row across the x-axis, then add a line break below, with 
+ each iteration of the parent loop -- we want x to happen first, then y. */
 
 
 
