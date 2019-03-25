@@ -282,39 +282,3 @@ for(i in dogs){
 
 //they give the same answer. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
