@@ -259,6 +259,8 @@ while (f <= 100){
 	f++;
 }
 
+//Is a for in loop using a variable to say (*for* the "variables"/keys *in* this object) {do w/e I say here}
+
 var dogs = {
   Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"
 };
