@@ -22,3 +22,17 @@ document.write( ' <h3>' + greeting + ' </h3> ');//we instruct the greeting to di
 we could create an empty h3 in the html, give it an id, then in the js document.getElementById('idhere').document.write(greeting);
 we could also let hThree = document.getElementById('idhere'); then, hThree.document.write(greeting); 
 allowing the script tags to be at the bottom of the html.*/
+
+
+
+let i = 0;
+
+let hash = '# ' + '# ' + '# ' + '#';
+
+while(i <= 8){
+	if(i % 2 === 0){
+		console.log(' ' + hash);
+	} else {
+		console.log(hash + ' ');
+	}
+}
