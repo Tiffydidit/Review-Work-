@@ -264,14 +264,14 @@ while (f <= 100){
 var dogs = {//There is an object with three properties 
   Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"//keys work as variables, when called they give you access to their value.
 };
-var myDog = ["Fido", "Hunter", "Snoopie"];//This variable is an array of keys. 
+var myDog = ["Fido", "Hunter", "Snoopie"];//This variable is an array of strings, that are the keys of dogs. 
 
-let i = 0;//i is the iterator, set to zero.
+let i = 0;//i is the iterator, we assign it the value zero.
 
-while(i < myDog.length){
-  var myBreed = dogs[myDog[i]];
-  i++
-  console.log(myBreed);
+while(i < myDog.length){//a while loop that runs as long as i is less than the length of myDog.
+  var myBreed = dogs[myDog[i]];//inside the loop, we declare a new variable and assign it to us calling the keys of the object using bracket notation.
+  i++//This iterates through the myDog array. With each iteration it changes the key in the bracket above.
+  console.log(myBreed);//display myBreed after every iteration. 
 } console.log(" ");
 
 //or
