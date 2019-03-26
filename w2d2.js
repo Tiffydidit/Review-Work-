@@ -131,7 +131,7 @@ for(i = 0; i <= currency.length; i++){//parent loop that loops through the curre
 console.log(amtOfCur);
 
 for (i = 0; i <=currency.length; i++) {
-	console.log(`${amtOfCur[i]} ${currency[i]}'s,  ' `);
+	console.log(`${amtOfCur[i]} ${currency[i]}'s`);
 }
 
 
