@@ -112,7 +112,7 @@ console.log(' ');
 
 
 
-function myMoneyBack(paid, price){
+function myMoneyBack(paid, price = 4){
 	let myChange = paid - price;
 	let counter = 0;
 
@@ -276,9 +276,27 @@ while(i < myDog.length){//a while loop that runs as long as i is less than the l
 
 //or
 
-for(i in dogs){
-  console.log(dogs[i]);
+let we;
+
+for(we in dogs){
+  console.log(dogs[we]);
 }
 
-//they give the same answer. 
+//they give the same answer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
