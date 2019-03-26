@@ -35,7 +35,7 @@ while(i < 8){//create a loop that runs while i being < 8 is true. We don't have 
 		console.log(hash + ' ');//when i is odd we get a space in back. 
 	}
 	i++;//add one to i. 
-}
+}console.log(' ');
 
 /*i starts at 0, 0 is less than 8 so we check to see if zero is divisble by 2; it is, so we
  display has with a space in front and add 1 to i. Now, i is 1. 1 is less than 8, but not divisble by 2
@@ -52,7 +52,7 @@ I thought to do it this way, at least adding spaces and hashes to an empty strin
 I also knew that "something else" would have to instruct line breaks.
 I didn't, however, realize that, that "something else" was the result of nested loops.*/ 
 
-let size = 16;// our exit condition b/c all we want, for now, is 8 rows.
+let size = 8;// our exit condition b/c all we want, for now, is 8 rows down and 8 (#/' ') across.
 
 let board = "";// empty string to which we will add a space or a # with each iteration of x.
 
@@ -68,8 +68,8 @@ for (let y = 0; y < size; y++) {//loop that creates y axis.
   }
   board += "\n";//last statement of the parent for loop that adds line breaks down the y axis of the board. 
 }
-
 console.log(board);//here we display final product. 
+console.log(' ');
 
 /* When the first loop starts, y is equal to zero.
 zero is less than 8, so we drop into the first loops code block i.e. the second loop, wherein:
@@ -117,30 +117,15 @@ our second for loop finishes it's first "loop around" and adds 1 to x: x = 1.
  each iteration of the parent loop -- we want x to happen first, then y. */
 
 
+let q = 0;
 
+let h = " ";
 
+while(q < 7){
+	h += "#";
+	console.log(h);
+	q++;
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-*/
+}
 
 
