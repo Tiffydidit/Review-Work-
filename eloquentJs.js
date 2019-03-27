@@ -133,3 +133,31 @@ while(q < 7){
 let min = (a,b) => Math.min(a,b);// ES6 function value that uses Math.min function to find the smallest number below. 
 
 console.log(min(0, 10));
+
+
+function countBs(string){
+	let i = 0;
+    let counter = 0;
+    while(i < string.length){
+    	if (string[i] === "B"){
+        	counter++
+        }
+       i++;
+    } return counter;
+}
+
+function countChar(string, s){
+	let i = 0;
+    let counter = 0;
+    while(i < string.length){
+    	if (string[i] === s){
+        	counter++
+        }
+       i++;
+    } return counter;
+}
+
+console.log(countBs("BBC"));
+
+console.log(countChar("kakkerlak", "k"));
+
