@@ -7,77 +7,26 @@
 			display: block;
 		}
 	</style>
-</head>
-<body>
-	<form>
-		<label> Your change for a 4$ cookie: </label>
-		<input type="text" name="dollars">
-		<button value="submit"> Submit</button>
-	</form>
-
-	<div id="disp">
-		
-
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-	let bills = [];
-
-	 function myMoneyBack(paid, price){
+	<script type="text/javascript">
+let n;
+n = Number(document.getElementById("n").value);
+	
+	function myMoneyBack(paid, price = 4){
 	let myChange = 0.00;
 	myChange = paid - price;
-	let counter = 0;
-
+	let bills = ['<img src="images/hundred.jpg">', "images/fifty.png", "images/twenty.jpg", "images/ten.png", "images/five.png"];
+	let i = 0;
+	
 	while (myChange >= 100){
 		myChange -= 100;
-		counter++;
-	} if (counter === 1){
-		console.log(counter + ": hundred");
-	} else {
-		console.log(counter + ": hundreds");
+		document.getElementById("disp").appendChild(bills[i]);
 	}
-	counter = 0;
+	i++;
 
-	while (myChange >= 50){//Each while loop is it's own universe, they change the values of the globally declared variables, 
-		myChange -= 50;//but do no intefer with each other. 
-		counter++;//With each bill dispensed we subtract it from myChange and count it w/ our counter. 
-	} if (counter === 1){//Outside of the loop we display the final value of counter. 
-		console.log(counter + ": fifty");//we use if else statements to ensure grammatically correct declarations of change. 
-	} else { 
-		console.log(counter + ": fifties")
-	} 
+	while (myChange >= 50){ 
+		myChange -= 50; 
+		counter++; 
+	}  
 	counter = 0;//We reset the counter to zero, so we can reuse it for subsequent denominations and repeat.
 	//Else we'd need a different counter for every denomination of bills and the coins.  
 
@@ -162,11 +111,21 @@
 }
 
 
-
-
-
-
 </script>
+	
+</head>
+<body>
+	<form>
+		<label> Your change for a 4$ cookie: </label>
+		<input type="text" name="dollars" id="n">
+		<button onclick="myMoneyBack(n)" value="submit" > Submit</button>
+	</form>
+
+	<div id="disp"> </div>
+	
+
+
+
 
 </body>
 </html>
