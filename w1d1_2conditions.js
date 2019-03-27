@@ -56,7 +56,7 @@ let g;
 
 g = 82;
 
-if (g > 54){ 			//In the nested conditional, the parent condition only has two options: greater than 54 or not. 
+if (g > 54){ //In the nested conditional, the parent condition only has two options: greater than 54 or not. 
 	if((g >= 90) && (g <= 93)){		//If you've gotten more than 54, we check for something else i.e. (the children conditons) 
 		console.log("You got an A-!"); //until one proves true. 
 	} else if ((g >= 94) && (g <= 96)){
