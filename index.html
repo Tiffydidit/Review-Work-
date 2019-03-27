@@ -7,19 +7,30 @@
 			display: block;
 		}
 	</style>
-	<script type="text/javascript">
-let n;
-n = Number(document.getElementById("n").value);
+		
+</head>
+<body>
+	<form>
+		<label> Your change for a 4$ cookie: </label>
+		<input type="text"  id="n">
+		<button onclick="myMoneyBack()">Submit</button>
+	</form>
 	
-	function myMoneyBack(paid, price = 4){
+
+
+
+<script type="text/javascript">
+	
+	function myMoneyBack(n, price = 4){
+	let n = Number(document.getElementById("n").value);
 	let myChange = 0.00;
-	myChange = paid - price;
+	myChange = n - price;
 	let bills = ['<img src="images/hundred.jpg">', "images/fifty.png", "images/twenty.jpg", "images/ten.png", "images/five.png"];
 	let i = 0;
 	
 	while (myChange >= 100){
 		myChange -= 100;
-		document.getElementById("disp").appendChild(bills[i]);
+		document.body.appendChild(bills[i]);
 	}
 	i++;
 
@@ -112,20 +123,6 @@ n = Number(document.getElementById("n").value);
 
 
 </script>
-	
-</head>
-<body>
-	<form>
-		<label> Your change for a 4$ cookie: </label>
-		<input type="text" name="dollars" id="n">
-		<button onclick="myMoneyBack(n)" value="submit" > Submit</button>
-	</form>
-
-	<div id="disp"> </div>
-	
-
-
-
 
 </body>
 </html>
