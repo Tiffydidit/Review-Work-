@@ -128,4 +128,8 @@ while(q < 7){
 
 }
 
+//Write a function min that takes two arguments and returns their minimum.
 
+let min = (a,b) => Math.min(a,b);// ES6 function value that uses Math.min function to find the smallest number below. 
+
+console.log(min(0, 10));
