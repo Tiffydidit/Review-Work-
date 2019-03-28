@@ -13,116 +13,13 @@
 	<form>
 		<label> Your change for a 4$ cookie: </label>
 		<input type="text"  id="n">
-		<button onclick="myMoneyBack(n, price)">Submit</button>
+		<button onclick="myMoneyBack()">Submit</button>
 	</form>
 	
 
 
 
-<script type="text/javascript">
-	
-	function myMoneyBack(n, price = 4){
-	let n = Number(document.getElementById("n").value);
-	let myChange = 0.00;
-	myChange = n - price;
-	let bills = ['<img src="images/hundred.jpg">', "images/fifty.png", "images/twenty.jpg", "images/ten.png", "images/five.png"];
-	let i = 0;
-	
-	while (myChange >= 100){
-		myChange -= 100;
-		document.body.appendChild(bills[i]);
-	}
-	i++;
-
-	while (myChange >= 50){ 
-		myChange -= 50; 
-		counter++; 
-	}  
-	counter = 0;//We reset the counter to zero, so we can reuse it for subsequent denominations and repeat.
-	//Else we'd need a different counter for every denomination of bills and the coins.  
-
-	while (myChange >= 20){
-		myChange -= 20;
-		counter++;	
-	} if (counter === 1){
-	 	console.log(counter + ": twenty");
-	} else {
-		console.log(counter + ": twenties");
-	}
-	counter = 0;
-
-	while (myChange >= 10){
-		myChange -= 10;
-		counter++;
-	} if (counter === 1){
-		console.log(counter + ": ten");
-	} else { 
-		console.log(counter + ": tens");
-	}
-	counter = 0;
-
-	while (myChange >= 5){
-		myChange -= 5;
-		counter++;
-	} if ((counter > 1)|| (counter === 0)){
-		console.log(counter + ": fives");
-	} else { 
-		console.log(counter + ": five");
-	}
-	counter = 0;
-
-	while (myChange >= 1){
-		myChange -= 1;
-		counter++;
-	} if ((counter > 1)|| (counter === 0)){
-		console.log(counter +": dollars");
-	} else {
-		console.log(counter +": dollar");
-	}
-	counter = 0; 
-
-	while (myChange >= .25){
-		myChange -= .25;
-		counter++
-	} if ((counter > 1)|| (counter === 0)){
-		console.log(counter + ": quarters");
-	} else { 
-		console.log(counter + ": quarter");
-	}
-	counter = 0;
-
-	while (myChange >= .10){
-		myChange -= .10;
-		counter++;
-	} if ((counter > 1)|| (counter === 0)){
-		console.log(counter + ": dimes");
-	} else {
-		console.log(counter + ": dime");
-	}
-	counter = 0;
-
-	while (myChange >= .05){
-		myChange -= .05;
-		counter++;
-	} if ((counter > 1) || (counter === 0)){
-		console.log(counter + ": nickels");
-	} else {
-		console.log(counter + ": nickel");
-	}
-	counter = 0;
-
-	while (myChange >= .01){
-		myChange -= .01;
-		counter++
-	} if ((counter > 1) || (counter === 0)){
-		console.log(counter + ": pennies");
-	} else {
-		console.log(counter + ": penny");
-	}
-}
-
-
-</script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
