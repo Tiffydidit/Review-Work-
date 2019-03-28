@@ -35,7 +35,7 @@ function disemvowel(string) {
   var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
   var result = " ";
   var i = 0
-  while(i < string.length){
+  while(i < string.length){//while i is less than the length of the string. 
     for(let j = 0; j < vowels.length; j++){
       if(string[i] != vowels[j]){
         result += string[i]
