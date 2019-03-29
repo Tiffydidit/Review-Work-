@@ -9,12 +9,12 @@ var img = document.createElement("IMG");
 function myMoneyBack(n, price = 4){
 	let n = Number(document.getElementById("n").value);
 	let myChange = 0.00;
-	myChange = n - price;
+	myChange = n - 4;
 	let i = 0;
 	
 	while (myChange >= 100){
 		myChange -= 100;
-		img.setAttribute("src", (bills[i]));
+		img.setAttribute("src", bills[i]);
 	}
 	i++;
 
