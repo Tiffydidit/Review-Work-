@@ -54,7 +54,26 @@ console.log(disemvowel('hello world')); // => 'hll wrld'
 
 
 
+function arrayBuilder(obj) {
+  // your code here...
+  let i;
+  let arr = [];
+  for(i in obj){
+    if(obj[i] > 1){
+       arr.push(i, i);
+    } else {
+      arr.push(i)
+    }
+   
+  }
+ return arr;
 
+}
+
+//Comment in the code below to test your function:
+
+console.log(arrayBuilder({'cats': 2, 'dogs': 1})); //=> ['cats', 'cats', 'dogs']
+console.log(arrayBuilder({}));
 
 
 
