@@ -53,14 +53,17 @@ console.log(disemvowel('CodeSmith')); // => 'CdSmth'
 console.log(disemvowel('hello world')); // => 'hll wrld'
 
 
-
+//I solved this, but with a hard code. How do I get my function to push i, obj[i] times w/o hard coding? USE A LOOP! 
 function arrayBuilder(obj) {
-  // your code here...
   let i;
   let arr = [];
   for(i in obj){
     if(obj[i] > 1){
-       arr.push(i, i);
+      let k = 0;
+       while(k < obj[i]){// added a while loop to solve dynamically. 
+         arr.push(i)
+         k++;
+       }
     } else {
       arr.push(i)
     }
@@ -69,6 +72,20 @@ function arrayBuilder(obj) {
  return arr;
 
 }
+//OLD, HARD CODE!
+//   let i;
+//   let arr = [];
+//   for(i in obj){
+//     if(obj[i] > 1){
+//        arr.push(i, i);
+//     } else {
+//       arr.push(i)
+//     }
+   
+//   }
+//  return arr;
+
+// }
 
 //Comment in the code below to test your function:
 
