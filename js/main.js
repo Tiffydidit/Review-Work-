@@ -1,10 +1,10 @@
 
 
 
-var bills = ['<img src="images/hundred.jpg">', '<img src="images/fifty.png">', '<img src="images/twenty.jpg">',
- '<img src="images/ten.png">', '<img src="images/five.png">', '<img src="images/dollar.png">' ];
+var bills = ["images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
+ "images/ten.png", "images/five.png", "images/dollar.png"];
 
-
+var img = document.createElement("IMG");
 
 function myMoneyBack(n, price = 4){
 	let n = Number(document.getElementById("n").value);
@@ -14,61 +14,61 @@ function myMoneyBack(n, price = 4){
 	
 	while (myChange >= 100){
 		myChange -= 100;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	}
 	i++;
 
 	while (myChange >= 50){ 
 		myChange -= 50; 
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	}  
 	i++;
 
 	while (myChange >= 20){
 		myChange -= 20;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	}
 	i++;
 
 	while (myChange >= 10){
 		myChange -= 10;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	} 
 	i++;
 
 	while (myChange >= 5){
 		myChange -= 5;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	} 
 	i++;
 
 	while (myChange >= 1){
 		myChange -= 1;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	}
 	i++; 
 
 	while (myChange >= .25){
 		myChange -= .25;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	} 
 	i++;
 
 	while (myChange >= .10){
 		myChange -= .10;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	} 
 	i++;
 
 	while (myChange >= .05){
 		myChange -= .05;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	} 
 	i++;
 
 	while (myChange >= .01){
 		myChange -= .01;
-		document.body.appendChild(bills[i]);
+		img.setAttribute("src", (bills[i]));
 	}
 	
 }
