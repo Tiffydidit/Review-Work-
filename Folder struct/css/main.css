@@ -4,13 +4,18 @@ body{
 }
 
 div{
-    border: solid green 2px;
+    /*border: solid green 2px;*/
     padding: 2%;
 }
 
 nav{
-    border: solid 2px;
-    padding: 2%;
+    border-top: solid #424C55 2px;
+    border-bottom: solid #424C55 2px;
+    margin: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    padding: 1%;
 }
 nav ul{
     display: flex;
@@ -26,8 +31,10 @@ nav li{
 a{
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    font-weight: lighter;
 }
-.title{
+.title, .pagetit{
     text-align: center;
     font-size: 6vw;
     color: #424C55;
@@ -39,9 +46,16 @@ span{
 .parent{
     display: flex;
     justify-content: space-around;
+   /* margin-top: 2%;
+    margin-bottom: 5%*/
+}
+.kids{
+    width: 350px;
 }
 footer{
-    border: solid 2px;
+    background-color: red;
+    /*border-top: solid 2px;
+    border-bottom: solid 2px;*/
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -55,5 +69,7 @@ footer ul{
 footer li{
     list-style: none;
     padding-right: 5%;
+    font-size: 20px;
+    font-weight: lighter;
    
 }
