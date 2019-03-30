@@ -40,3 +40,20 @@ span{
     display: flex;
     justify-content: space-around;
 }
+footer{
+    border: solid 2px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    list-style: none;
+    padding-right: 5%;
+   
+}
