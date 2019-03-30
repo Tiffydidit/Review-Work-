@@ -4,7 +4,7 @@ body{
 }
 
 div{
-    /*border: solid green 2px;*/
+    
     padding: 2%;
 }
 
@@ -30,9 +30,13 @@ nav li{
 
 a{
     text-decoration: none;
-    color: black;
+    color:  #424C55;
     font-size: 20px;
     font-weight: lighter;
+}
+a:hover{
+    font-size: 20.8px;
+    color: #e71d36;
 }
 .title, .pagetit{
     text-align: center;
@@ -40,20 +44,25 @@ a{
     color: #424C55;
     margin: 0px;
 }
+.pagetit{
+    font-size: 2vw;
+    margin-top: 3%;
+}
 span{
     color: #2EC4B6;
 }
 .parent{
     display: flex;
     justify-content: space-around;
-   /* margin-top: 2%;
-    margin-bottom: 5%*/
+    flex-wrap: wrap;
+    margin: 0px;
 }
 .kids{
     width: 350px;
 }
+
 footer{
-    background-color: red;
+    background-color: #e71d36;
     /*border-top: solid 2px;
     border-bottom: solid 2px;*/
     position: fixed;
@@ -64,6 +73,7 @@ footer{
 footer ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer li{
@@ -71,5 +81,15 @@ footer li{
     padding-right: 5%;
     font-size: 20px;
     font-weight: lighter;
+    white-space: nowrap;
    
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    color: #2EC4B6;
+}
+p{
+  color: #424C55;
 }
