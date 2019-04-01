@@ -116,3 +116,20 @@ function updateRecords(id, prop, value) {
 }
 
 //this is not my code, it's the solution they provided. I pasted it here to dissect/understand it...
+
+//NESTED LOOPS FROM FREE CODE CAMP
+function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  for (let i = 0; i < arr.length; i++){
+    for (let k = 0; k < arr[i].length; k++){
+      product *= arr[i][k];
+    }
+  }
+  
+  // Only change code above this line
+  return product;
+}
+
+// Modify values below to test your code
+multiplyAll([[1,2],[3,4],[5,6,7]]);
