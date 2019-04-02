@@ -55,7 +55,7 @@ function pluralize (arr){
 }
 
 
-//second redention:
+//second redetition:
 function pluralize (arr){
   let plurals = [];
   for (let i = 0; i < arr.length; i++){
