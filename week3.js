@@ -73,3 +73,10 @@ function pluralize (arr){
   }
   return plurals;
 }
+
+const animals = ["dog", "cat", "tree frog"];
+ const empty = [];
+ const stuff = ["ants", "sea lions", "undefineds"];
+ console.log(pluralize(animals)); // should log: ["dogs", "cats", "tree frogs"]
+ console.log(pluralize(empty));
+ console.log(pluralize(stuff));
