@@ -62,7 +62,7 @@ function pluralize (arr){
     if (arr != []){
       if(arr[i] === "undefined" || arr[i] === "undefineds"){
          plurals.push();
-      } else if ((arr[i].length - 1) === "s"){
+      } else if ((arr[i].length - 1) === "s"){//this line is being ignored. I suspect b/c the value of arr[i].length cannot be rendered.  
         plurals.push(arr[i]);
       } else {
         plurals.push(arr[i] + "s");
