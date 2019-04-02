@@ -6,10 +6,11 @@ var bills = ["images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
 
 var img = document.createElement("IMG");
 
-function myMoneyBack(paid, price = 4){
-	let num = Number(document.getElementById("n").value);
+let num = Number(document.getElementById("n").value);
+
+function myMoneyBack( price = 4){
 	let myChange = 0.00;
-	myChange = num - 4;
+	myChange = num - price;
 	let i = 0;
 	
 	while (myChange >= 100){
