@@ -53,3 +53,23 @@ function pluralize (arr){
   }
   return plurals;
 }
+
+
+//second redention:
+function pluralize (arr){
+  let plurals = [];
+  for (let i = 0; i < arr.length; i++){
+    if (arr != []){
+      if(arr[i] === "undefined" || arr[i] === "undefineds"){
+         plurals.push();
+      } else if ((arr[i].length - 1) === "s"){
+        plurals.push(arr[i]);
+      } else {
+        plurals.push(arr[i] + "s");
+      }
+    } else {
+      return arr;
+    } 
+  }
+  return plurals;
+}
