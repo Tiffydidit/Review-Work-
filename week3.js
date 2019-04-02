@@ -12,6 +12,7 @@ function update(callback) {//declare a function that takes a parameter. (global)
   for (let i = 0; i < array.length; i++) {//create a loop that loops through the globally stored array above. (local to update)
     const updated = callback(array[i]);//declare a variable and assign it the callback function being invoked, with the element at the [i]th place of the array as it's argument. (local to callback, then local update)
     output.push(updated);//push the value of the invocation of the callback into the empty array. (local to update)
+  	//^ ^ ^This could also be written as output.push(callback(array[i]));
   }
 
   return output;//Once our loop breaks we return the once empty array into the global memory, as return means we popout of our function. 
@@ -55,14 +56,14 @@ function pluralize (arr){
 }
 
 
-//second redetition:
+//second redition:
 function pluralize (arr){
   let plurals = [];
   for (let i = 0; i < arr.length; i++){
     if (arr != []){
       if(arr[i] === "undefined" || arr[i] === "undefineds"){
          plurals.push();
-      } else if ((arr[i].length - 1) === "s"){//this line is being ignored. I suspect b/c the value of arr[i].length cannot be rendered.  
+      } else if ((arr[i].length - 1) === "s"){//this line/condition is being ignored. I suspect b/c the value of arr[i].length cannot be rendered.  
         plurals.push(arr[i]);
       } else {
         plurals.push(arr[i] + "s");
@@ -74,7 +75,7 @@ function pluralize (arr){
   return plurals;
 }
 
-const animals = ["dog", "cat", "tree frog"];
+ const animals = ["dog", "cat", "tree frog"];
  const empty = [];
  const stuff = ["ants", "sea lions", "undefineds"];
  console.log(pluralize(animals)); // should log: ["dogs", "cats", "tree frogs"]
