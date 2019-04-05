@@ -1,8 +1,32 @@
 body{
 	width: 100%;
 }
-nav, main, div{
+nav, div{
 	border: groove 2px blue;
 	padding: 2%;
 	display: flex;
+}
+
+
+
+nav ul{
+	display: flex;
+	list-style: none;
+
+	
+
+}
+
+ul li{
+	padding-right: 5%;
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav{
+	justify-content: space-around;
+	padding-top: 1%;
 }
