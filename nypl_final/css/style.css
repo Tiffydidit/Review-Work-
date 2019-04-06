@@ -1,10 +1,19 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
 body{
 	width: 100%;
 }
-nav, div{
+nav{
 	border: groove 2px blue;
 	padding: 2%;
 	display: flex;
+}
+div{
+	border: groove 2px blue;
+	padding: 2%;
+	
 }
 
 
@@ -12,13 +21,10 @@ nav, div{
 nav ul{
 	display: flex;
 	list-style: none;
-
-	
-
 }
-
-ul li{
+nav li{
 	padding-right: 5%;
+	white-space: nowrap;
 }
 
 li a{
@@ -28,5 +34,17 @@ li a{
 
 nav{
 	justify-content: space-around;
-	padding-top: 1%;
+	padding: 1%;
+}
+
+#fp img{
+	height: 350px;
+	width: 550px;
+	padding-right: 2%;
+}
+
+#fp{
+	display: flex;
+	padding-left: 5%;
+	padding-right: 25%;
 }
