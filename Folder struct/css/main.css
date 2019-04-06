@@ -1,4 +1,3 @@
-/*Tiffany's CSS*/
 body{
     width: 100%;
     margin-bottom: 100px;
@@ -10,7 +9,7 @@ body{
 }
 
 
-.ttnav{
+nav{
     border-top: solid #424C55 2px;
     border-bottom: solid #424C55 2px;
     margin: 0px;
@@ -19,24 +18,24 @@ body{
     margin-top: 1%;
     padding: 1%;
 }
-.ttnav ul{
+nav ul{
     display: flex;
     justify-content: center;
 }
 
-.ttnav li{
+nav li{
     list-style: none;
     padding-right: 5%;
    
 }
 
-.ttnav a{
+nav a{
     text-decoration: none;
     color:  #424C55;
     font-size: 20px;
     font-weight: lighter;
 }
-.ttnav a:hover{
+nav a:hover{
     font-size: 20.8px;
     color: #e71d36;
 }
@@ -108,4 +107,13 @@ footer a:hover{
 .pkid a:hover{
 font-size: 16.2px;
 }
-/*END Tiffany's CSS*/
+
+/*CHANGES MADE SINCE CLASS
+1. Changed address zip to 10001 and added a link to google map
+2. added links to actual eyeglass retailers to pkid
+3. added on hover anime to pkid scale up to 16.2px (default is 16px)
+4. added 3% margin to the bottom of my pics. 
+
+
+
+*/
