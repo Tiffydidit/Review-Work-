@@ -1,5 +1,7 @@
 ##Week 4 Notes
 
+#Day 1
+
 #These notes are all thoughts and feelings:
 
 Kai has kinda disappeared, mysteriously, and I'm a little worreid about her. 
