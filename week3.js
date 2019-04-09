@@ -37,23 +37,6 @@ update(multiplyBy20) // returns [20, 40, 60]
 update(stringify) // returns [‘1’, ‘2’, ‘3’]
 
 
-function pluralize (arr){
-  let plurals = [];
-  for (let i = 0; i < arr.length; i++){
-    if (arr != []){
-      if(arr[i].length - 1 !== "s" && arr[i] !== "undefined" || arr[i] !== "undefineds"){
-         plurals.push(arr[i] + "s");
-      } else if (arr[i].length - 1 === "s"){
-        plurals.push(arr[i]);
-      } else  if (arr[i] === "undefined" || arr[i] === "undefineds"){
-        plurals.push();
-      }
-    } else {
-      return plurals;
-    } 
-  }
-  return plurals;
-}
 
 
 //second redition:
