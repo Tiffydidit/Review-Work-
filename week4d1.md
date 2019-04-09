@@ -12,5 +12,7 @@ Belem is an awesome instructor and I'm getting so much better at css. Wokepedia 
 
 I think the universe is trying to teach me how to be content and gratful when things are not coming up roses, especially when things are not coming up roses. 
 
-I need to get back to my daily grind. Tomorrow is a new day and I'm leaving these gross, depressed feelings behind. 
+I need to get back to my daily grind. Tomorrow is a new day and I'm leaving these gross, depressed feelings behind.
+
+The thing is, I've got one problem and it's money - same problem 99% of the world has. 
 
