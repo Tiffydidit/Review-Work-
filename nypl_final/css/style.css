@@ -37,7 +37,7 @@ nav{
 	padding: 1%;
 }
 
-#fp img{
+.fpi{
 	height: 350px;
 	width: 550px;
 	padding-right: 2%;
@@ -47,4 +47,11 @@ nav{
 	display: flex;
 	padding-left: 5%;
 	padding-right: 25%;
+}
+
+.logo{
+	width: 25px;
+	height: 15px;
+	border-radius: 90%;
+
 }
