@@ -44,7 +44,7 @@ nav{
 .top{
 	margin: 1%;
 	font-size: 2vw;
-	
+
 }
 .woke{
 	text-align: center;
@@ -66,7 +66,7 @@ nav{
 #fp{
 	display: flex;
 	padding-left: 5%;
-	padding-right: 25%;
+	padding-right: 15%;
 }
 
 .logo{
@@ -74,4 +74,7 @@ nav{
 
 	border-radius: 90%;
 
+}
+.paras p{
+	margin-bottom: 1.5%;
 }
