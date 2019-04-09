@@ -4,5 +4,7 @@ Kai has kinda disappeared mysteriously and I a little worreid about her.
 
 I'm also more than a little worrid about myself.. What anI doing with my life?
 
-I don't know how well this coding thing is going and I'm not sure where my life goes from here. I thought thirty would be this stellar year, and thus far it's just been disappointment and WTF. Surprisingly enough, 
+I don't know how well this coding thing is going and I'm not sure where my life goes from here. I thought thirty would be this stellar year, and thus far it's just been disappointment and WTF. Surprisingly enough, my class at the library is going very well. 
+
+Belem is an awesome instructor and I'm getting so much better at css. Wokepedia is going together well too, I just need to find the motivation to do it. I honestly need to find the motivation to do anything - I haven't showered in idk how many days.
 
