@@ -78,3 +78,11 @@ nav{
 .paras p{
 	margin-bottom: 1.5%;
 }
+
+.coli, .colib{
+	height: 350px;
+	width: 350px;
+	border: ridge lightgrey 4px;
+}
+
+
