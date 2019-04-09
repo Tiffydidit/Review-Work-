@@ -4,11 +4,15 @@
 }
 body{
 	width: 100%;
+	font-family: 'Inconsolata', monospace;
+	
+
 }
 nav{
 	border: groove 2px blue;
 	padding: 2%;
 	display: flex;
+
 }
 div{
 	border: groove 2px blue;
@@ -37,6 +41,20 @@ nav{
 	padding: 1%;
 }
 
+.top{
+	margin: 1%;
+	font-size: 2vw;
+}
+.woke{
+	text-align: center;
+	font-size: 6vw;
+}
+
+.tag{
+	text-align: center;
+	margin-top: 1%;
+}
+
 .fpi{
 	height: 350px;
 	width: 550px;
@@ -51,7 +69,7 @@ nav{
 
 .logo{
 	width: 25px;
-	height: 15px;
+
 	border-radius: 90%;
 
 }
