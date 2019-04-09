@@ -8,3 +8,5 @@ I don't know how well this coding thing is going and I'm not sure where my life 
 
 Belem is an awesome instructor and I'm getting so much better at css. Wokepedia is going together well too, I just need to find the motivation to do it. I honestly need to find the motivation to do anything - I haven't showered in idk how many days.
 
+I think the universe is trying to teach me how to be content and gratful when things are not coming up roses,
+
