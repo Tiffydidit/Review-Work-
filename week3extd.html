@@ -6,20 +6,20 @@
 <body>
 
 	<h1 id="big"></h1>
-	<button onclick="big">change</button>
+	<button onclick="document.getElementById('big').innerHTML = 'Tiffany'">change</button>
 
 
 	<h2 id="med"></h2>
-	<button onmouseover="">change</button>
+	<button onmouseover="document.getElementById('med').innerHTML = `Joyel`">change</button>
 
 	<h3 id="lil"></h3>
-	<button onkeydown="">change</button>
+	<button onkeydown="document.getElementById('lil').innerHTML = `Warren`">change</button>
 
 	<script type="text/javascript">
 
-		var big = document.getElementById("big").innerHTML = `Tiffany`
-		document.getElementById("med").innerHTML = `Joyel`
-		document.getElementById("lil").innerHTML = `Warren`
+		
+		
+		
 		
 	</script>
 
