@@ -5,37 +5,129 @@
 </head>
 <body>
 
-	<h1 id="big">Who</h1>
+	<h1>3.1 Classwork</h1>
+
+	<h2 id="big">Who</h2>
 	<button onclick="document.getElementById('big').innerHTML = 'Tiffany'">change</button>
-
-
-	<h2 id="med">are</h2>
+	<h3 id="med">are</h3>
 	<button onclick="document.getElementById('med').innerHTML = `Joyel`">change</button>
-
-	<h3 id="lil">you?</h3>
+	<h4 id="lil">you?</h4>
 	<button onclick="document.getElementById('lil').innerHTML = `Warren`">change</button>
-
-	<h3 id="small">TJW</h3>
+	<h5 id="small">TJW</h5>
 	<button onclick="document.getElementById('small').style.color='red'">change</button>
 	<br><br>
-
-	<img src="images/dollar.png" id='money' width="400">
+	<img src="images/dollar.png" id='money' width="400px">
+	<br>
 	<button onclick="document.getElementById('money').src='images/hundred.jpg'">Magic</button>
-
-
 	<br><br>
-
 	<h4 id="one" style='display:none'>Hey!</h4>
 	<button onclick="document.getElementById('one').style.display='block'">Changes</button>
-
 	<h4 id="two" style="font-size: 2vw">How are you?</h4>
 	<button onclick="document.getElementById('two').style.fontSize='1vw'">Changes</button>
-
 	<h4 id="three" >Not good.</h4>
 	<button onclick="document.getElementById('three').style.visibility='hidden'">Changes</button>
 
-	<h4 id="four">Sorry to hear that</h4>
-	<button onclick="document.getElementById('four').style.display='block'">Changes</button>
+
+	<h1>3.2 Classwork</h1>
+
+	<h2>JS Variables</h2>
+	<p id="puid" >In this task, x , y, and z  are variables</p>
+	<button onclick="document.write(z)">Add</button>
+
+	<h1>3.3 Classwork</h1>
+
+	<input type="text"  id="a">
+	<input type="text" id="b">
+
+	<button onclick="sum()">sum</button>
+	<button onclick="mul()">multiply</button>
+	<button onclick="div()">divide</button>
+	<button onclick="sub()">subtract</button>
+
+
+	<h1>3.5 Tasks</h1>
+
+<form>
+	<p id="quest">What's your name?</p>
+	<input type="text" name="answer">
+	<button value="Sumbit" onclick="changeQ()">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+	let x = 89;
+	let y = 10;
+	let z = x + y; // Include a statement that tells your browser to identify z --> what does that mean?
+		
+		let a;
+		let b;
+
+
+			function setValues(){
+				 a = Number(document.getElementById('a').value);
+				 b = Number(document.getElementById('b').value);
+
+			
+
+		}
+			function sum(){
+				setValues();
+				let result = a + b;
+				window.alert(result);
+
+		}
+		function mul(){
+				setValues();
+				let result = a * b;
+				window.alert(result);
+
+		}
+		function div(){
+				setValues();
+				let result = a / b;
+				window.alert(result);
+
+		}
+		function sub(){
+				setValues();
+				let result = a / b;
+				window.alert(result);
+
+		}
+
+
+	let quests = ["First pets name?", "Favorite color?", "Name of your favorite teacher?", "Mother's maiden name?", "Password to all your accounts?"];	
+
+	function changeQ () {
+		for (let i = 0; i < quests.length; i++) {
+		document.getElementById("quest").innerHTML = quests[i];
+		
+		}
+	}
+
+
+		
+	
+
+
+
+
+
+
+	</script>
+
+	
 
 
 
@@ -45,7 +137,5 @@
 		
 		<!-- Week 3 extension -->
 		
-	
-
 </body>
 </html>
