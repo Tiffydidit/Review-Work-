@@ -50,7 +50,7 @@
 <form>
 	<p id="quest">What's your name?</p>
 	<input type="text" name="answer">
-	<button value="Sumbit" onclick="changeQ()">Submit</button>
+	<button type="button" onclick="changeQ()">Change</button>
 </form>
 
 
@@ -101,7 +101,7 @@
 		}
 		function sub(){
 				setValues();
-				let result = a / b;
+				let result = a - b;
 				window.alert(result);
 
 		}
@@ -109,11 +109,16 @@
 
 	let quests = ["First pets name?", "Favorite color?", "Name of your favorite teacher?", "Mother's maiden name?", "Password to all your accounts?"];	
 
+	let counter = 0;
+
 	function changeQ () {
-		for (let i = 0; i < quests.length; i++) {
-		document.getElementById("quest").innerHTML = quests[i];
-		
+		document.getElementById("quest").innerHTML = quests[counter];
+		counter++
+		if(counter >= quests.length){
+			counter = 0;
 		}
+		
+		
 	}
 
 
