@@ -68,7 +68,6 @@ li a{
 
 .logo{
 	width: 25px;
-
 	border-radius: 90%;
 
 }
@@ -86,9 +85,6 @@ p{
 	border: ridge lightgrey 4px;
 }
 
-.fasfa-search{
-
-}
 
 .oic{
 	text-transform: uppercase;
@@ -96,6 +92,10 @@ p{
 
 .heads{
 	margin: 1%;
+}
+
+.sub{
+	text-align: center;
 }
 
 
