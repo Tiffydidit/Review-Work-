@@ -9,14 +9,18 @@ body{
 
 }
 nav, footer{
-	border: groove 2px blue;
+	border-top: groove 2px black;
+	border-bottom: groove 2px black;
 	display: flex;
 	justify-content: space-around;
 	padding: 1%;
+	margin: 2% 5%;
+	/*margin-bottom: 1%;*/
+
 }
 
 div{
-	border: groove 2px blue;
+	/*border: groove 2px blue;*/
 	padding: 2%;
 	
 }
@@ -36,6 +40,7 @@ li a{
 	text-decoration: none;
 	color: black;
 }
+
 
 
 .top{
@@ -60,7 +65,7 @@ li a{
 	padding-right: 2%;
 }
 
-#fp{
+.fp{
 	display: flex;
 	padding-left: 5%;
 	padding-right: 15%;
@@ -92,10 +97,16 @@ p{
 
 .heads{
 	margin: 1%;
+	margin-left: 2%;
 }
 
 .sub{
 	text-align: center;
+	margin-bottom: 2%;
+}
+
+#openpara{
+	padding-left: 15%;
 }
 
 
