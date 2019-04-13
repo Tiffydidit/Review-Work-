@@ -15,12 +15,12 @@ nav, footer{
 	justify-content: space-around;
 	padding: 1%;
 	margin: 2% 5%;
-	/*margin-bottom: 1%;*/
+	
 
 }
 
 div{
-	/*border: groove 2px blue;*/
+	border: groove 2px blue;
 	padding: 2%;
 	
 }
@@ -45,6 +45,7 @@ li a{
 
 .top{
 	margin: 1%;
+	margin-left: 3%;
 	font-size: 2vw;
 
 }
@@ -64,7 +65,12 @@ li a{
 	width: 550px;
 	padding-right: 2%;
 }
-
+.fp1{
+	
+	width:450px;
+	height: 450px;
+	padding-right: 2%;
+}
 .fp{
 	display: flex;
 	padding-left: 5%;
@@ -76,12 +82,14 @@ li a{
 	border-radius: 90%;
 
 }
-.paras p{
-	margin-bottom: 2%;
-}
+/*.paras p{
+	
+}*/
 
 p{
 	line-height: 1.4;
+	font-size: 18px;
+	margin-bottom: 2%;
 }
 
 .coli, .colib{
@@ -102,11 +110,15 @@ p{
 
 .sub{
 	text-align: center;
-	margin-bottom: 2%;
+	/*margin-bottom: 2%;*/
 }
 
 #openpara{
-	padding-left: 15%;
+	padding-left: 12%;
+}
+
+.quests{
+	text-align:  center;
 }
 
 
