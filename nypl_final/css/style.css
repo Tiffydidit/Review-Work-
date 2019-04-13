@@ -76,13 +76,21 @@ nav{
 
 }
 .paras p{
-	margin-bottom: 1.5%;
+	margin-bottom: 2%;
+}
+
+p{
+	line-height: 1.4;
 }
 
 .coli, .colib{
 	height: 350px;
 	width: 350px;
 	border: ridge lightgrey 4px;
+}
+
+.fasfa-search{
+
 }
 
 
