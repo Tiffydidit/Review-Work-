@@ -36,19 +36,19 @@ nav li, footer li{
 	white-space: nowrap;
 }
 
-li a{
+li a, nav a{
 	text-decoration: none;
 	color: black;
 }
 
 
 
-.top{
+/*.top{
 	margin: 1%;
 	margin-left: 3%;
 	font-size: 2vw;
 
-}
+}*/
 .woke{
 	text-align: center;
 	font-size: 6vw;
@@ -63,18 +63,25 @@ li a{
 .fpi{
 	height: 350px;
 	width: 550px;
-	padding-right: 2%;
+	/*padding-right: 2%;*/
 }
 .fp1{
 	
 	width:450px;
 	height: 450px;
-	padding-right: 2%;
+	
 }
 .fp{
 	display: flex;
 	padding-left: 5%;
-	padding-right: 15%;
+	padding-right: 10%;
+}
+
+.pefp{
+	padding-left: 2%;
+	padding-right: 2%;
+	flex-direction: row-reverse;
+
 }
 
 .logo{
