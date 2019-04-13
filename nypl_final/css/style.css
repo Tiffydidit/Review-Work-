@@ -8,12 +8,13 @@ body{
 	
 
 }
-nav{
+nav, footer{
 	border: groove 2px blue;
-	padding: 2%;
 	display: flex;
-
+	justify-content: space-around;
+	padding: 1%;
 }
+
 div{
 	border: groove 2px blue;
 	padding: 2%;
@@ -22,11 +23,11 @@ div{
 
 
 
-nav ul{
+nav ul, footer ul{
 	display: flex;
 	list-style: none;
 }
-nav li{
+nav li, footer li{
 	padding-right: 5%;
 	white-space: nowrap;
 }
@@ -36,10 +37,6 @@ li a{
 	color: black;
 }
 
-nav{
-	justify-content: space-around;
-	padding: 1%;
-}
 
 .top{
 	margin: 1%;
@@ -95,6 +92,10 @@ p{
 
 .oic{
 	text-transform: uppercase;
+}
+
+.heads{
+	margin: 1%;
 }
 
 
