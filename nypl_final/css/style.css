@@ -21,7 +21,7 @@ nav, footer{
 
 div{
 	border: groove 2px blue;
-	padding: 2%;
+	padding: 1.5%;
 	
 }
 
@@ -63,12 +63,13 @@ li a, nav a{
 .fpi{
 	height: 350px;
 	width: 550px;
-	/*padding-right: 2%;*/
+	padding-top: 1.5%;
 }
 .fp1{
 	
 	width:450px;
 	height: 450px;
+	padding-top: 1.5%;
 	
 }
 .fp{
@@ -102,7 +103,7 @@ p{
 .coli, .colib{
 	height: 350px;
 	width: 350px;
-	border: ridge lightgrey 4px;
+	border: solid lightgrey 4px;
 }
 
 
@@ -122,10 +123,9 @@ p{
 
 #openpara{
 	padding-left: 12%;
+	padding-top: 2%;
 }
 
-.quests{
-	text-align:  center;
-}
+
 
 
