@@ -21,7 +21,9 @@ nav, footer{
 
 div{
 	border: groove 2px blue;
-	padding: 1.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
 	
 }
 
