@@ -2,6 +2,7 @@
 
 
 var bills = ["<img images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
+ "images/ten.png", "images/five.png", "images/dollar.png",    "images/quarter.jpg",
  "images/ten.png", "images/five.png", "images/dollar.png"];
 
 
