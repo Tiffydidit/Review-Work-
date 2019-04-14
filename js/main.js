@@ -1,20 +1,12 @@
 
 
 
-var bills = ["images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
+var bills = ["<img images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
  "images/ten.png", "images/five.png", "images/dollar.png"];
 
-//var img = document.createElement("img");
+
 
 let num = Number(document.getElementById("n").value);
-console.log("got the number");
-console.log(num);
-
-//document.getElementById("doll").innerHTML = `<img id=\"doll\" src = #{bills[1]}>`
-//document.getElementById("doll").setAttribute( "src", "images/five.png");
-
-//img.setAttribute("src", bills[0]);
-//document.getElementById("pics").appendChild(img);
 
 function myMoneyBack(num, price = 4){
 	let myChange = 0.00;
@@ -30,8 +22,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", bills[0]);
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a 100");
-		console.log(myChange);
+		
 	}
 	
 
@@ -41,10 +32,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[1]));
 		document.getElementById("pics").appendChild(image);
-		// document.getElementById("pics").appendChild(image);
-		console.log("you got a 50");
-		console.log(myChange);
-		console.log(bills[1]);
+		
 	}  
 	
 
@@ -54,8 +42,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[2]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a 20");
-		console.log(myChange);
+	
 	}
 	
 
@@ -65,8 +52,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[3]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a 10");
-		console.log(myChange);
+	
 	} 
 	
 
@@ -76,8 +62,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[4]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a 5");
-		console.log(myChange);
+		
 	} 
 	
 
@@ -87,8 +72,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[5]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a 1");
-		console.log(myChange);
+	
 	}
 	
 
@@ -98,8 +82,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[6]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a .25");
-		console.log(myChange);
+	
 	} 
 	
 
@@ -109,8 +92,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		image.setAttribute("src", (bills[7]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a .10");
-		console.log(myChange);
+	
 	} 
 	
 
@@ -120,8 +102,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		img.setAttribute("src", (bills[8]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a .05");
-		console.log(myChange);
+		
 	} 
 	
 
@@ -131,8 +112,7 @@ function myMoneyBack(num, price = 4){
 		let image = document.createElement("img");
 		img.setAttribute("src", (bills[9]));
 		document.getElementById("pics").appendChild(image);
-		console.log("you got a .01");
-		console.log(myChange);
+		
 	}
 	
 }
