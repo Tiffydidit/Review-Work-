@@ -1,8 +1,8 @@
 
 
 
-var bills = ["<img images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
- "images/ten.png", "images/five.png", "images/dollar.png",    "images/quarter.jpg",
+var bills = ["images/hundred.jpg", "images/fifty.png", "images/twenty.jpg",
+ "images/ten.png", "images/five.png", "images/dollar.png", "images/quarter.png",
  "images/dime.png", "images/nick.png", "images/penny.png"];
 
 
@@ -101,7 +101,7 @@ function myMoneyBack(num, price = 4){
 	
 		myChange -= .05;
 		let image = document.createElement("img");
-		img.setAttribute("src", (bills[8]));
+		image.setAttribute("src", (bills[8]));
 		document.getElementById("pics").appendChild(image);
 		
 	} 
@@ -111,7 +111,7 @@ function myMoneyBack(num, price = 4){
 	
 		myChange -= .01;
 		let image = document.createElement("img");
-		img.setAttribute("src", (bills[9]));
+		image.setAttribute("src", (bills[9]));
 		document.getElementById("pics").appendChild(image);
 		
 	}
