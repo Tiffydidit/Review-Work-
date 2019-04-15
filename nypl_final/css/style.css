@@ -129,9 +129,10 @@ p{
 	/*margin-bottom: 2%;*/
 }
 
-#openpara{
+.openpara{
 	padding-left: 12%;
 	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 #land{
@@ -160,6 +161,11 @@ p{
 
 #ldg{
 	font-size: 18px;
+}
+
+#cycle{
+	margin-left: 9%;
+	margin-bottom: 2%;
 }
 
 
