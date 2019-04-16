@@ -3,8 +3,9 @@
 	margin: 0px;
 }
 body{
-	width: 100%;
+	max-width: 1650px;
 	font-family: 'Inconsolata', monospace;
+	margin: auto;
 	
 	
 
