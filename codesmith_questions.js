@@ -133,3 +133,60 @@ function multiplyAll(arr) {
 
 // Modify values below to test your code
 multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+//CSX Intersection
+
+ function compare(a=[], b=[], c=[]){
+    let indexA = 0, indexB = 0, indexC = 0;
+    let arr = [];
+    while(indexA < a.length){
+        // compare array a and b.
+      if(a[indexA] === b[indexB]){//if a nd b are equal
+        // compare array a and c.
+        if(a[indexA] === c[indexC]){ //if a and c are equal
+          arr.push(a[indexA])
+          // and update
+          indexA++;
+          indexB++;
+          indexC++;
+        }
+        else if(c[indexC] < a[indexA]){ // c is < a
+          indexC++  //update c      
+        } else {// c is > a
+          //update b and a.
+          indexB++;
+          indexA++;
+        }
+      }
+      else if (b[indexB] < a[indexA]){
+        // update array b.
+        indexB++;
+      } else{
+        // update array a
+        indexA++;
+      }
+    }
+  return arr;
+  }
+    
+function intersection(a=[]){
+
+  a[0].sort((aa, bb) => aa-bb);
+  a[1].sort((aa, bb) => aa-bb);
+  a[2].sort((aa, bb) => aa-bb);
+  
+  if(a[0].length < a[1].length && a[0].length < a[2].length){
+    return compare(a[0], a[1], a[2]);
+  } else if (a[1].length < a[0].length && a[1].length < a[2].length){
+    return compare(a[1], a[0], a[2]);
+  } else {
+    return compare(a[2], a[1], a[0]);
+  }
+}
+  
+
+// Uncomment these to check your work!
+const arr1 = [5, 10, 15, 20];
+const arr2 = [15, 88, 1, 5, 7];
+const arr3 = [1, 10, 15, 5, 20];
+console.log(intersection([arr1, arr2, arr3]));
