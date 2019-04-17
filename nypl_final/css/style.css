@@ -50,6 +50,12 @@ li a{
 	font-size: 19px;
 }
 
+li a:hover{
+	font-size: 19.4px;
+	color: grey;
+
+}
+
 
 
 /*.top{
@@ -167,6 +173,7 @@ p{
 #cycle{
 	margin-left: 9%;
 	margin-bottom: 2%;
+
 }
 
 
