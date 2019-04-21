@@ -92,6 +92,52 @@ small {
   }
 }
 
+
+  div{
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    
+  }
+  .foot{
+    height: 40px;
+    width: 40px;
+    background: #ccc;
+    border-radius: 40px;
+    border: 15px solid #999;
+   
+  }
+  .torso{
+    height: 0;
+    width: 140px;
+    border-top: 300px solid #bc6;
+    border-left:75px solid transparent;
+    border-right: 75px solid transparent;
+    border-radius: 20px 20px 100px 100px;
+  }
+  .brain{
+    background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
+     background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+     background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+    background-size: 75px 150px;
+    height: 150px;
+    width: 150px;
+    border-radius: 60px 60px 10px 10px;
+    border-bottom: 40px double #666; 
+    
+    
+    
+  }
+  
+  .beep{
+    height: 0px;
+    width: 5px;
+     border:5px solid transparent; 
+    border-bottom: 80px solid #888;
+    border-top: 10px solid #777; 
+    
+  }
+
 </style>
 
 </head>
@@ -114,6 +160,13 @@ small {
   <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
 </div>
 
+<div class="beep"></div>
+<div class="brain"></div>  
+<div class="torso"></div>
+<div class="foot"></div>
+
+
+
 <script>
   $('div').on('click', function() {
       $(this).toggleClass('show-description');
@@ -121,3 +174,4 @@ small {
 </script>
 
 </body>
+
