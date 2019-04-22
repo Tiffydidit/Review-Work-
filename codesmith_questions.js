@@ -29,21 +29,21 @@
 //They used an object and the two  .toLowercase(), before I saw there solution I thought to use an  array and nested loops. 
 //Is this doable? 
 
-function disemvowel(string) {
-  // your code here...
-  var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-  var result = " ";
+// function disemvowel(string) {
+//   // your code here...
+//   var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//   var result = " ";
 
-  var i = 0
-  while(i < string.length){//while i is less than the length of the string. 
-    for(let j = 0; j < vowels.length;){//I want to drop into this for loop and iterate through every index of vowels using j
-      if(string[i] !== vowels[j]){//comparing the letter in string to each letter in vowels
-        							//if the letter being compared from string is not deeply equal to a letter from vowel, //add it to result and break the loop. 
-       }result += string[i]
-    }
-     i++//increment i to compare the next letter in the string. 
-  }
-}
+//   var i = 0
+//   while(i < string.length){//while i is less than the length of the string. 
+//     for(let j = 0; j < vowels.length;){//I want to drop into this for loop and iterate through every index of vowels using j
+//       if(string[i] !== vowels[j]){//comparing the letter in string to each letter in vowels
+//         							//if the letter being compared from string is not deeply equal to a letter from vowel, //add it to result and break the loop. 
+//        }result += string[i]
+//     }
+//      i++//increment i to compare the next letter in the string. 
+//   }
+// }
 
 //Comment in the code below to test your function:
 
