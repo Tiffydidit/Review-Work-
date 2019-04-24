@@ -24,5 +24,5 @@ let num = [3, 2, 1];
 
 num = num.join(" + ");
 
-console.log(num.join(" equals "));
+console.log(num);
 
