@@ -20,5 +20,9 @@ let randoNdx = Math.floor(Math.random() * arr.length);
 
 console.log(arr[randoNdx]);
 
+let num = [3, 2, 1];
 
+num = num.join(" + ");
+
+console.log(num.join(" equals "));
 
