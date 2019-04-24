@@ -6,7 +6,7 @@ let aRR = ["fany", "el", "ren", "Soy", "bu", "oi",];
 
 let nu = arr.concat(Arr, aRR);
 console.log(nu);
-
+console.log(arr.indexOf("Tiffany"));
 
 
 
