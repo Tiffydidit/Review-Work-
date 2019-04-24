@@ -19,16 +19,6 @@ let nu = arr.concat(Arr, aRR);
 let randoNdx = Math.floor(Math.random() * arr.length);
 
 console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
-console.log(arr[randoNdx]);
+
 
 
