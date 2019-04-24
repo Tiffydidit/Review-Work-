@@ -16,7 +16,9 @@ console.log(arr.indexOf("Tiffany"));
 nu = arr.join(" ");
 console.log(nu);
 
+let randoNdx = Math.floor(Math.random() * arr.length);
 
+console.log(arr[randoNdx]);
 
 
 
