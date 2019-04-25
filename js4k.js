@@ -38,14 +38,14 @@ console.log(Object.keys(person))
 
 
 let moneyOwed = {};
-moneyOwed.Tiff = 66;
+moneyOwed.Tiff = [5, 76, 788];
 moneyOwed.Court = 6;
 moneyOwed.Wan = 99;
 moneyOwed.Will = 9;
 
 moneyOwed.Will += 80;
 console.log(moneyOwed.Will);
-console.log(moneyOwed);
+console.log(moneyOwed.Tiff[1]);
 
 
 
