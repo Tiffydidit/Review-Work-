@@ -32,6 +32,8 @@ let person = {
 	job: "heiress",
 }
 
+person;
+
 console.log(Object.keys(person))
 
 
