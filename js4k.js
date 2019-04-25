@@ -30,13 +30,9 @@ let person = {
 	name: "Indie",
 	age: 30,
 	job: "heiress",
-
-
-
-
 }
 
-
+console.log(Object.keys(person))
 
 
 
