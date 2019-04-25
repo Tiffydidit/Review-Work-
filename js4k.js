@@ -45,6 +45,7 @@ moneyOwed.Will = 9;
 
 moneyOwed.Will += 80;
 console.log(moneyOwed.Will);
+console.log(moneyOwed);
 
 
 
