@@ -32,7 +32,7 @@ let person = {
 	job: "heiress",
 }
 
-person;
+console.log(person);
 
 console.log(Object.keys(person))
 
