@@ -39,9 +39,13 @@ console.log(Object.keys(person))
 
 let moneyOwed = {};
 moneyOwed.Tiff = 66;
-moneyOwed.Court = 66;
-moneyOwed.Wan = 66;
-moneyOwed.Will = 66;
+moneyOwed.Court = 6;
+moneyOwed.Wan = 99;
+moneyOwed.Will = 9;
+
+moneyOwed.Will += 80;
+console.log(moneyOwed.Will);
+
 
 
 
