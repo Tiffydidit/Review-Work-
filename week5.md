@@ -5,3 +5,5 @@ I have to decide between meeting one of the co-founders of iota or going to hack
 I am invested in iota and have been since mid 2017, it would be great to meet one of the creators.
 
 JS for kids is great and Troy gave me a lot of things to work on. 
+
+I'm just doing something everynight to keep myself in the game. 
