@@ -12,7 +12,7 @@ I've learned some SQL and am solidifying my knowledge of objects.
 
 I'm thinking of pitching WadGod at Hackfest.
 
-
+Things are going well, I just have to stay focused. 
 
 
 
