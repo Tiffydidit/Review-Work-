@@ -7,3 +7,5 @@ I am invested in iota and have been since mid 2017, it would be great to meet on
 JS for kids is great and Troy gave me a lot of things to work on. 
 
 I'm just doing something everynight to keep myself in the game. 
+
+I've learned some SQL and am solidifying my knowledge of objects.
