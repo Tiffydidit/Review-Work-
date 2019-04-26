@@ -10,6 +10,7 @@ I'm just doing something everynight to keep myself in the game.
 
 I've learned some SQL and am solidifying my knowledge of objects.
 
+I'm thinking of pitching WadGod at Hackfest.
 
 
 
