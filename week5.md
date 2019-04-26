@@ -9,3 +9,24 @@ JS for kids is great and Troy gave me a lot of things to work on.
 I'm just doing something everynight to keep myself in the game. 
 
 I've learned some SQL and am solidifying my knowledge of objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
