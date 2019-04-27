@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View, Button, Text } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
@@ -7,6 +7,7 @@ export default class App extends React.Component {
   state = {
     showMessage: false
   }
+
   getUserLocationHandler = () => {
     console.log('Im clicked');
     const currState = this.state.showMessage;
@@ -15,12 +16,12 @@ export default class App extends React.Component {
   }
 
   render() {
-    let myText = this.state.showMessage ? <Text>Open up App.js to start working on your app! </Text> : null;
+    let myText = this.state.showMessage ? <Text>Open up App.js to start working on your app! <Text> : null;
       return (
         <View style={styles.container}>
         <Button title="My Button" onPress={() => { this.getUserLocationHandler();}} /> 
         {myText}
-        </View>
+        <View>
       );
     }
   }
