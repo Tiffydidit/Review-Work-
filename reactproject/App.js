@@ -1,27 +1,25 @@
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View, Button, Text } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
 export default class App extends React.Component {
   state = {
-    isLoadingComplete: false,
-  };
+    showMessage: false
+  }
+  getUserLocationHandler = () => {
+    console.log('Im clicked');
+    const currState = this.state.showMessage;
+    const nextState = !currState;
+    this.setState({showMessage: nextState})
+  }
 
   render() {
-    if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
-      return (
-        <AppLoading
-          startAsync={this._loadResourcesAsync}
-          onError={this._handleLoadingError}
-          onFinish={this._handleFinishLoading}
-        />
-      );
-    } else {
+    let myText = this.state.showMessage ? <Text>Open up App.js to start working on your app! </Text> : null;
       return (
         <View style={styles.container}>
-          {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-          <AppNavigator />
+        <Button title="My Button" onPress={() => { this.getUserLocationHandler();}} /> 
+        {myText}
         </View>
       );
     }
