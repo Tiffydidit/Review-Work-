@@ -16,12 +16,12 @@ export default class App extends React.Component {
   }
 
   render() {
-    let myText = this.state.showMessage ? <Text>Open up App.js to start working on your app! <Text> : null;
+    let myText = this.state.showMessage ? <Text>Open up App.js to start working on your app!</Text> : null;
       return (
         <View style={styles.container}>
         <Button title="My Button" onPress={() => { this.getUserLocationHandler();}} /> 
         {myText}
-        <View>
+        </View>
       );
     }
   }
