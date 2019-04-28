@@ -17,6 +17,7 @@
 	label{
 		display: block;
 		font-size: 16pt;
+
 	}
 
 	img{
@@ -26,9 +27,10 @@
 		left: 40%;
 	}
 	form{
-		position: absolute;
-		top: 15%;
-		left: 42%;
+		width: 60%;
+		padding-left: 40%;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 	input{
 		margin-bottom: 5%;
@@ -38,42 +40,37 @@
 
 	button{
 		display: block;
-		margin-top: 5%;
+		margin-top: 3%;
 		font-family: 'Cormorant Garamond', serif;
-		padding: 5%;
 		font-size: 16pt;
 		
 	}
-
-
-
-
-
-
 
 	</style>
 </head>
 <body>
 	<img src="logo.png">
 	<form>
-		<label id="tell" for="company name">Company Name:</label>
-			<input type="text" name="name" placeholder="DSW">
+			<label  for="company name">Company Name:</label>
+			<input type="text" name="company name" placeholder="DSW">
 			
-
 			<label  for="quantity">Quantity:</label>
-			<input type="text" name="age" placeholder="300kg">
+			<input type="text" name="quantity" placeholder="300kg">
 
 			<label for="location">Pick-up Location:</label>
-			<input type="text" name="zodiac_sign" placeholder="640 8th Ave.">
+			<input type="text" name="location" placeholder="640 8th Ave.">
 
 			<label for="contact name">Contact Name/Title:</label>
-			<input type="text" name="birthday" placeholder="Henley Jacobs, Store Manager">
+			<input type="text" name="contact name" placeholder="Henley Jacobs, Store Manager">
 
-			<label for="city">Contact Number:</label>
-			<input type="text" name="city" placeholder="555-555-5555">
+			<label for="number">Contact Number:</label>
+			<input type="text" name="number" placeholder="555-555-5555">
 
-			<label for="city">E-mail:</label>
-			<input type="text" name="city" placeholder="hjacobs@dsw.com">
+			<label for="email">E-mail:</label>
+			<input type="text" name="email" placeholder="hjacobs@dsw.com">
+
+			<label for="calendar">Schedule A Relux Pickup:</label>
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffcc33&amp;src=4spr71u04a63r4hl6polm5td1g%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York" style="border-width:0" width="550" height="400" frameborder="0" scrolling="no"></iframe>
 
 			<button value="submit">Submit</button>
 
