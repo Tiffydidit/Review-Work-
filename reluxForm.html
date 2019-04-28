@@ -2,23 +2,47 @@
 <html>
 <head>
 	<title>Retailer Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+
+		font-family: 'Cormorant Garamond', serif;
+
+	}
+
 	label{
 		display: block;
+		font-size: 16pt;
 	}
 
 	img{
+		
 		position: relative;
 		top: 0;
-		left: 45%;
+		left: 40%;
 	}
 	form{
 		position: absolute;
 		top: 15%;
-		left: 45%;
+		left: 42%;
 	}
 	input{
 		margin-bottom: 5%;
+		width: 180px;
+		padding-left: 15%;
+	}
+
+	button{
+		display: block;
+		margin-top: 5%;
+		font-family: 'Cormorant Garamond', serif;
+		padding: 5%;
+		font-size: 16pt;
+		
 	}
 
 
@@ -32,23 +56,23 @@
 <body>
 	<img src="logo.png">
 	<form>
-		<label id="tell" for="name">Company Name :</label>
+		<label id="tell" for="company name">Company Name:</label>
 			<input type="text" name="name" placeholder="DSW">
 			
 
-			<label  id="secnd"for="age">Quantity :</label>
+			<label  for="quantity">Quantity:</label>
 			<input type="text" name="age" placeholder="300kg">
 
-			<label id="third"for="zodiac_sign">Pick-up Location :</label>
-			<input type="text" name="zodiac_sign" placeholder="Store# 537/640 8th Ave.">
+			<label for="location">Pick-up Location:</label>
+			<input type="text" name="zodiac_sign" placeholder="640 8th Ave.">
 
-			<label id="fourth"for="birthday">Contact Name/Title :</label>
-			<input type="text" name="birthday" placeholder="Henley Jacobs, Regional Manager">
+			<label for="contact name">Contact Name/Title:</label>
+			<input type="text" name="birthday" placeholder="Henley Jacobs, Store Manager">
 
-			<label id="fifth"for="city">Contact Number :</label>
+			<label for="city">Contact Number:</label>
 			<input type="text" name="city" placeholder="555-555-5555">
 
-			<label id="fifth"for="city">E-mail :</label>
+			<label for="city">E-mail:</label>
 			<input type="text" name="city" placeholder="hjacobs@dsw.com">
 
 			<button value="submit">Submit</button>
