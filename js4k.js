@@ -49,7 +49,36 @@ console.log(moneyOwed.Tiff[1]);
 
 
 
+let randoNdx = Math.floor(Math.random() * arr.length);
 
+console.log(arr[randoNdx]);
+
+let num = [3, 2, 1];
+
+num = num.join(" + ");
+
+console.log(num);
+
+let person = {
+	name: "Indie",
+	age: 30,
+	job: "heiress",
+}
+
+console.log(person);
+
+console.log(Object.keys(person))
+
+
+let moneyOwed = {};
+moneyOwed.Tiff = [5, 76, 788];
+moneyOwed.Court = 6;
+moneyOwed.Wan = 99;
+moneyOwed.Will = 9;
+
+moneyOwed.Will += 80;
+console.log(moneyOwed.Will);
+console.log(moneyOwed.Tiff[1]);
 
 
 
