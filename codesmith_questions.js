@@ -47,8 +47,22 @@
 
 //Comment in the code below to test your function:
 
+// console.log(disemvowel('CodeSmith')); // => 'CdSmth'
+//  console.log(disemvowel('BANANA')); // => 'BNN'
+// console.log(disemvowel('hello world')); // => 'hll wrld'
+
+// Troy's solution uses regex
+
+function disemvowel(string) {
+  // your code here...
+ 
+  return string.replace(/o/gi, "").replace(/e/gi, "").replace(/a/gi, "").replace(/i/gi, "").replace(/u/gi, "");
+}
+
+//Comment in the code below to test your function:
+
 console.log(disemvowel('CodeSmith')); // => 'CdSmth'
- console.log(disemvowel('BANANA')); // => 'BNN'
+console.log(disemvowel('BANANA')); // => 'BNN'
 console.log(disemvowel('hello world')); // => 'hll wrld'
 
 
