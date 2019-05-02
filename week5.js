@@ -1,4 +1,4 @@
-let borros = ['BK', 'BX', 'MN', 'QN', 'SI'];
+let borros = ['Brooklyn', 'BX', 'MN', 'QN', 'SI'];
 
 let i = 0;
 borros[5] = 'Harlem';
