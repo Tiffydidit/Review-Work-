@@ -1,6 +1,7 @@
 let borros = ['BK', 'BX', 'MN', 'QN', 'SI'];
 
 let i = 0;
+borros[5] = 'Harlem';
 
 while( i < borros.length){
 	console.log(borros[i]);
@@ -9,4 +10,3 @@ while( i < borros.length){
 	i++;
 }
 
-borros[5] = 'Harlem';
