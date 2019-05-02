@@ -8,3 +8,5 @@ while( i < borros.length){
 	console.log(borros[i][i]);
 	i++;
 }
+
+borros[5] = 'Harlem';
