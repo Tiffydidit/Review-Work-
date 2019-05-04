@@ -27,6 +27,8 @@ Projects:
 
 I just took the fullstack exam. I only solved 2/6 problems -- everything else required a knowledge of methods that I did not have.
 
+Graduation from the library course is on the 15th and I made it, yay!
+
 
 
 
