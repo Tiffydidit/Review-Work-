@@ -31,7 +31,7 @@ Graduation from the library course is on the 15th and I made it, yay!
 
 I don't kow if this is a real career for me or I'm just learning this sotht when I can afford to have my app made, I can't be cheated/know who to hire.
 
-Right now: Laeeq
+Right now: Laeeq, Cai
 
 
 
