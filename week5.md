@@ -25,6 +25,9 @@ Projects:
 	WadGod
 
 
+I just took the fullstack exam. I only solved 2/6 problems -- everything else required a knowledge of methods that I did not have.
+
+
 
 
 
