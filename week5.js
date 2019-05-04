@@ -14,3 +14,6 @@ while( i < borros.length){
 //Look into array methods.
 //Look into string methods.
 //Look into number methods.
+//Look into array methods.
+//Look into string methods.
+//Look into number methods.
