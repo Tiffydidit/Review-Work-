@@ -9,3 +9,5 @@ It's week 7 and I've been stagnate for three weeks.
 Not sure this is something I can do -- pull myself out of this depression, that is. 
 
 I've gained thirty pounds. 
+
+I'm going to start getting it 
