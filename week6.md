@@ -14,4 +14,4 @@ I'm going to start getting it together.
 
 There's but so many office and seinfeld reruns a girl can watch.
 
-Today was more of
+Today was more of the
