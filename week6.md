@@ -16,4 +16,3 @@ There's but so many office and seinfeld reruns a girl can watch.
 
 Today was more of the same. Tomorrow I have my graduation from the NYPL coding class.
 
-R.O.I. (Renouncing Our Isms) recognizes that human beings are organic computers, that function perfectly when they learn how to take care of themselves; and that colonization and subsequently, industrialization, are tools used to divert humanity's progression toward Life. (Note: there is a difference between Life and survival).
